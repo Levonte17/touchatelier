@@ -94,13 +94,22 @@ height: 10%;
       
     }
    }
+//////////////////// POLICY //////////////////////////// 
+.policy {
+width: 100%;
+justify-content: center;
+}
 //////////////////// TOP //////////////////////////// 
 .top{
   display:flex;
   justify-content: space-around;
-  
+  color: black;
 }
 .navs, p{
+  text-decoration: none;
+  color: black;
+}
+.a{
   text-decoration: none;
   color: black;
 }

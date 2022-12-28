@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 import {GrSchedule} from "react-icons/gr";
 import { FiPhoneCall,
          FiInstagram
@@ -9,31 +8,32 @@ function Top(props) {
   return (
     <div className='top'>
                 <div className='navs'>
-            <NavLink to="/">
-                <p>
+    <a href='tel:+19544083913' className='a'>
              <FiPhoneCall />
              (954)408-3913
-                </p>
-            </NavLink>
+    </a>
                 </div>
 
+                <div className="contact2">
+    </div>
+
+
                 <div className='navs'>
-            <NavLink to="/book">        
-                <p>
+                <a href='https://touchatelier.as.me/schedule.php' className='a'>
                 <GrSchedule />
-                Book Now
-                </p>
-            </NavLink>
+                Book Appointment
+            </a>
                 </div>
-
+                
                 <div className='navs'>
-            <NavLink to="/people">
-                <p>
-                <FiInstagram/> Follow us
-                </p>
-            </NavLink> 
-
+                    <a href='https://www.instagram.com/touchatelier_/'
+                        className='a'>
+                        <FiInstagram/> 
+                        Follow us
+                    </a> 
                 </div>
+
+
                 </div>
   )
 };

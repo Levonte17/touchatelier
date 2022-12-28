@@ -5,6 +5,8 @@ import { Routes, Route } from 'react-router-dom';
 import List from '../pages/List';
 import ShowList from '../pages/ShowList';
 import Home from '../pages/Home';
+import Policy from '../pages/Policy';
+import Services from '../pages/Services';
 
 function Main(props) {
 
@@ -82,6 +84,18 @@ useEffect(() => {
 <Routes>
     <Route path="/" element={
         <Home 
+             
+        />
+    } />
+    
+    <Route path="/policy" element={
+        <Policy 
+             
+        />
+    } />
+    
+    <Route path="/services" element={
+        <Services 
              
         />
     } />
